@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header {
+    background-color: #f28b35;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: top 0.3s ease;
+}
+
+.top-header.hide {
+    top: -100px;
+}
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding: 20px 0;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: top 0.3s ease;
+}
+
+
+.main-header.hide {
+    top: -100px;
+}
+
+.main-header div {
+    display: flex;
+    gap: 20px;
+}
+.main-header i {
+    font-size: 20px;
+    color: #f28b35;
+}
+.main-header img {
+    height: 50px;
+}
+
+.category {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 110px;
+    transition: top .5s ease;
+}
+
+.category.hide{
+    top: -100px;
+}
+
+.category h2 {
+    font-size: 18px;
+    font-weight: normal;
+    white-space: normal;
+}
+
+.hero-section img {
+    margin-top: 200px;
+    width: 100%;
+}
+
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-section > h1 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50px 0;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 220px;
+    border: 1px solid rgba(0, 0, 0, .12);
+}
+
+.product h1 {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.product h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.product img {
+    height: 180px;
+}
+
+.product button {
+    background-color: #f28b35;
+    color: white;
+    padding: 15px 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+.collection-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.collection-section {
+    margin-bottom: 100px;
+}
+
+.collection-section > h1 {
+    margin: 50px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.collection {
+    display: flex;
+    gap: 50px;
+}
+
+.collection-content img {
+    height: 100px;
+}
+
+.collection-content h2 {
+    font-size: 20x;
+    font-weight: normal;
+}
+
+
+
+.footer-section {
+    margin: 100px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer-1st {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-1st img{
+    height: 50px;
+    width: fit-content;
+}
+
+.footer-1st h1 {
+    font-size: 20px;
+}
+
+.footer-1st h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer-2nd {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.footer-2nd> h2 {
+    font-size: 16px;
+    color: #f28b35;
+}
+
+.footer-2nd div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.id {
+    font-size: 18px;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f28b35;
+    color: white;
+    height: 10vh;
+}
+
+.bottom-footer i {
+    font-size: 20px;
+}
